@@ -2,7 +2,7 @@
   "name": "arize-phoenix-heroku",
   "description": "Arize Phoenix LLM observability platform on Heroku",
   "keywords": ["arize", "phoenix", "llm", "observability", "ai", "machine learning"],
-  "repository": "https://github.com/your-username/arize-phoenix-heroku",
+  "repository": "https://github.com/dsouza-anush/arize-phoenix-heroku",
   "stack": "container",
   "success_url": "/",
   "env": {

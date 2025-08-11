@@ -2,7 +2,7 @@
 
 Deploy [Arize Phoenix](https://github.com/Arize-ai/phoenix) LLM observability platform on Heroku with one click.
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/your-username/arize-phoenix-heroku)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/dsouza-anush/arize-phoenix-heroku)
 
 ## What is Arize Phoenix?
 
@@ -30,7 +30,7 @@ The easiest way to deploy Arize Phoenix on Heroku:
 
 1. Clone this repository:
    ```
-   git clone https://github.com/your-username/arize-phoenix-heroku.git
+   git clone https://github.com/dsouza-anush/arize-phoenix-heroku.git
    cd arize-phoenix-heroku
    ```
 
