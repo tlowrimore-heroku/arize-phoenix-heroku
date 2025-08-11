@@ -54,4 +54,5 @@ export PHOENIX_OTLP_GRPC_ENABLED=false
 echo "Starting Arize Phoenix on port $PHOENIX_PORT"
 
 # Execute the command passed to the entrypoint
-exec python -m phoenix.server.main serve --host=0.0.0.0 --port="$PHOENIX_PORT"
+export PHOENIX_HOST=0.0.0.0
+exec python -m phoenix.server.main serve
