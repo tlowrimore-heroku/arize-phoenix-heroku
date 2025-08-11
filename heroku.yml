@@ -1,0 +1,8 @@
+build:
+  docker:
+    web: Dockerfile
+addons:
+  - plan: heroku-postgresql
+    as: DATABASE
+  - plan: papertrail
+    as: LOGS

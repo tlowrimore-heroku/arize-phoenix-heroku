@@ -1,0 +1,50 @@
+{
+  "name": "arize-phoenix-heroku",
+  "description": "Arize Phoenix LLM observability platform on Heroku",
+  "keywords": ["arize", "phoenix", "llm", "observability", "ai", "machine learning"],
+  "repository": "https://github.com/your-username/arize-phoenix-heroku",
+  "stack": "container",
+  "success_url": "/",
+  "env": {
+    "PHOENIX_SECRET": {
+      "description": "A secret key for authentication (32+ characters with at least one digit and one lowercase letter)",
+      "value": "",
+      "required": false
+    },
+    "PHOENIX_ENABLE_AUTH": {
+      "description": "Enable authentication (true/false)",
+      "value": "false",
+      "required": false
+    },
+    "PHOENIX_ADMIN_SECRET": {
+      "description": "Admin authentication token (optional)",
+      "value": "",
+      "required": false
+    },
+    "PHOENIX_TLS_ENABLED": {
+      "description": "Enable TLS (true/false)",
+      "value": "false",
+      "required": false
+    },
+    "TZ": {
+      "description": "Timezone setting",
+      "value": "UTC",
+      "required": false
+    }
+  },
+  "addons": [
+    {
+      "plan": "heroku-postgresql:hobby-dev",
+      "as": "DATABASE"
+    },
+    {
+      "plan": "papertrail:choklad",
+      "as": "LOGS"
+    }
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
