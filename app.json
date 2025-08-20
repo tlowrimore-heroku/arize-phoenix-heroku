@@ -38,8 +38,7 @@
       "as": "DATABASE"
     },
     {
-      "plan": "papertrail:choklad",
-      "as": "LOGS"
+      "plan": "papertrail:choklad"
     }
   ],
   "buildpacks": [
